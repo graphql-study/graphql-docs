@@ -62,3 +62,6 @@
   - validation & execution \* introspection
 - `21.02.18` Best Practices
   - 모범사례
+
+## `Reference`
+- [graphql spec](http://spec.graphql.org/)
