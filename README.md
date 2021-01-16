@@ -2,7 +2,9 @@
 
 > https://graphql.org
 
-- [공식문서 번역](https://graphql-kr.github.io/)
+> https://graphql-kr.github.io/
+
+
 - 슬랙 👉 nextersgraphql.slack.com
 - 오픈카톡 👉 https://open.kakao.com/o/gcQMBUQc
 
@@ -64,4 +66,4 @@
   - 모범사례
 
 ## `Reference`
-- [graphql spec](http://spec.graphql.org/)
+- [spec.graphql](http://spec.graphql.org/)
