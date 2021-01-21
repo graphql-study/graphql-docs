@@ -2,13 +2,25 @@
 
 > https://www.howtographql.com/basics/3-big-picture/
 
+
+<!-- TOC -->
+
+- [Big Picture(Architecture)](#big-picturearchitecture)
+  - [1. GraphQL server with a connected database](#1-graphql-server-with-a-connected-database)
+  - [2. GraphQL layer that integrates existing systems](#2-graphql-layer-that-integrates-existing-systems)
+  - [3. Hybrid approach with connected database and integration of existing system](#3-hybrid-approach-with-connected-database-and-integration-of-existing-system)
+  - [4. Resolver](#4-resolver)
+  - [5. Graphql Client Libraries](#5-graphql-client-libraries)
+
+<!-- /TOC -->
+
 다음과 같은 Use Case가 있습니다 (3)
 
 1. 데이터베이스가 있는 GraphQL 서버
 2. 기존 레거시 시스템을 통합(추상화) 시키는 GraphQL API layer
 3. 하이브리드 접근 (1번과 2번 통합)
 
-## GraphQL server with a connected database
+## 1. GraphQL server with a connected database
 
 ![](https://imgur.com/cRE6oeb.png)
 
@@ -21,20 +33,20 @@
 - About DB: Graphql doesn’t care about the database or the format that is used to store the data
   - SQL, NoSQL, Cloud Storage
 
-## GraphQL layer that integrates existing systems
+## 2. GraphQL layer that integrates existing systems
 
 - 기존 레거시 시스템의 복잡성을 추상화 시킬 수 있음
 
 ![](https://imgur.com/zQggcSX.png)
 
-## Hybrid approach with connected database and integration of existing system
+## 3. Hybrid approach with connected database and integration of existing system
 
 - DB + Legacy system
 
 ![](https://imgur.com/73dByTz.png)
 
 
-## Resolver
+## 4. Resolver
 > GraphQL이 이렇게 유연한 이유
 
 ![](https://imgur.com/e1gBEP5.png)
@@ -45,7 +57,7 @@
   - 실제 사용해봤을때는, 필드단위가 아닌 스키마(DTO) 단위로 resolver를 생성해줬는데, 문구 확인이 필요
 - 이후 GraphQL 서버는 모든 리솔버들의 반환값을 패키징(원하는 형식)하여, 클라이언트로 다시 보냅니다.
 
-## Graphql Client Libraries
+## 5. Graphql Client Libraries
 
 
 - GraphQL의 Client에서 Best Practice
