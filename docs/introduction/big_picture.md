@@ -67,4 +67,4 @@
 2. UI에 데이터 표시 (response 받은 데이터 display)
 
 - 모든 하위 수준 네트워킹 작업과 데이터 저장(stores data local memory or persistent)은 추상화되어야함. (Apollo, Relay)
-- **the declaration of data dependencies should be the dominant part** ---> Q.이게 주력이 되어야 한다는데 무슨뜻?
+- 데이터 저장과 더불어 네트워크 통신과 같은 작업들은 모두 추상화 되어야 하며 데이터 선언적 도메인이 중심을 이루어야 한다.
